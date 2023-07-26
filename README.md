@@ -44,6 +44,12 @@ La solución consiste en los siguientes contenedores:
 ##### CQRS
 El patrón CQRS (Command Query Responsibility Segregation) sugiere dividir una aplicación en dos partes: la primera se encarga de las actualizaciones de datos (Commands), y la segunda se encarga de las consultas de datos (Queries).
 
+### Anal[itica
+- **AppSync:** ppSync proporciona una manera de gestionar APIs de GraphQL. Conecta el API de GraphQL a la base de datos DynamoDB Consultas. AppSync mapea directamente los esquemas de GraphQL y las tablas de DynamoDB.
+- **Esquema GraphQL:** El API de GraphQL prepara los datos para los informes de análisis. Por ejemplo, distancia total recorrida por cada vehículo en un período de tiempo.
+- **Integración con React:** Con Apollo Client para React se intala el cliente de la API de GraphQL. Apollo Client facilita la ejecución de consultas y mutaciones de GraphQL, la gestión de datos en caché y la actualización de la interfaz de usuario de React.
+- **Generación de informes:** Desde React las consultas GraphQL se pueden renderizar en tablas, gráficos, mapas o cualquier otra visualización.
+
 # Estilo de arquitectura 
 ### Serverless
 **- Ventajas:**
